@@ -1,7 +1,7 @@
 from functions_text import *
 
 def test_number_differents_characters():
-    assert 6 == number_differents_characters('hello')
+    assert 4 == number_differents_characters('hello') # I changed assert 6 to assert 4 because there are only 24 different characters
     assert 1 == number_differents_characters('ooooooooooo')
     assert 2 == number_differents_characters('abaabaabaabaaba')
     assert 0 == number_differents_characters('')
@@ -23,3 +23,4 @@ def test_number_words_differents():
     assert 4 == number_words_differents(' a b c   d   a b c ')
     assert 0 == number_words_differents('')
 
+test_number_differents_characters()
