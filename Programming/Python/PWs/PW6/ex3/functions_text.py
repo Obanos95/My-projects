@@ -9,13 +9,13 @@ def number_differents_characters(text):
     :type: int
     '''
     assert isinstance(text, str)
-    dif_char_num = 0
-    used_char = []
-    for i in text:
-        if i not in used_char:
-            dif_char_num += 1
-            used_char.append(i)
-    return dif_char_num
+    used_chars = []
+    dif_chars = 0
+    for char in text:
+        if char not in used_chars:
+            dif_chars += 1
+            used_chars.append(char)
+    return dif_chars
 
 
 def number_words(text):
@@ -31,11 +31,16 @@ def number_words(text):
     :type: (int)
     '''
     assert isinstance(text, str)
-    words_num = 0
+    words = []
     word = []
-    #for i in text:
-    #    if i != ' ':
-
+    for char in (text + ' '):
+        if char != ' ':
+            word.append(char)
+        else:
+            if len(word) != 0:
+                words.append(word)
+            word = []
+    return len(words)
 
 
 def number_words_differents(text):
@@ -51,4 +56,13 @@ def number_words_differents(text):
     :type: (int)
     '''
     assert isinstance(text, str)
-    pass
+    words = []
+    word = []
+    for char in (text + ' '):
+        if char != ' ':
+            word.append(char)
+        else:
+            if len(word) != 0 and word not in words:
+                words.append(word)
+            word = []
+    return len(words)
