@@ -1,0 +1,7 @@
+The signature of the function shows what type should input and output be (string, integer and e.c).
+
+The documentation chain or docstring is a string that explains what the function does. It's a little documentation for the function.
+
+Specification shows the behavior and expected output of the function.
+
+Statements is the code in the function.

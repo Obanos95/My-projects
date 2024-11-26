@@ -1,0 +1,29 @@
+Result of the program:
+
+Checks if the number is divisible by 2 or 3
+prog 1: 
+0 divisible by 2
+0 divisible by 3
+2 divisible by 2
+3 divisible by 3
+4 divisible by 2
+6 divisible by 2
+6 divisible by 3
+8 divisible by 2
+Checks if it's divisible by 2 and only if divisible checks if it's divisible by 3
+prog 2:
+0 divisible by 2
+0 divisible by 3
+2 divisible by 2
+4 divisible by 2
+6 divisible by 2
+6 divisible by 3
+8 divisible by 2
+Checks if the number is divisible by 2 and if not checks if it's divisible by 3
+prog 3:
+0 divisible by 2
+2 divisible by 2
+3 divisible by 3
+4 divisible by 2
+6 divisible by 2
+8 divisible by 2

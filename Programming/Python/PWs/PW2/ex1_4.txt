@@ -1,0 +1,4 @@
+Exercice 1.4 is integrated to all programs. I've done it by using 'while' loop:
+
+while continuegame != 'n':
+	continuegame = input('Do you want to play again?[y/n]: ').lower()

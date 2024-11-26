@@ -1,0 +1,11 @@
+The return statement is used to pass the output of the program to the caller. In this code function "minimum" has two returns. Both of them are used to return the lower of two integers or strings.
+
+If a subroutine contains no "return", the program will return 'None'
+
+"Assert" statement checks the condition. If the condition is true, nothing happens. If the condition is false, the program will raise AssertionError.
+
+'minimum(1,2)' means that elt1=1 and elt2=2. 'minimum(elt2=-3,elt1=-5)' means that elt1=-5, elt2=-3
+
+"if __name__=='__main__'" checks if the program is the main program and not an imported module.
+
+While running the program no errors occured and the program printed 'successful tests'.

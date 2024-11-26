@@ -1,0 +1,7 @@
+Yes, we can. There will be no errors or conflicts
+
+The 'a' parameter of sp1 exists only if we call the function and 'insert' a variable or a value (for example sp1(2) or sp1(d)).
+
+The expression means that variable 'a' in function sp1 will claim the value of variable 'a' of main(),
+
+The program will print (7, 6, 11) and the raise NameError as there is no 'b' variable.
