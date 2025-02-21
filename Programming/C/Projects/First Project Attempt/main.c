@@ -1,29 +1,45 @@
 #include <stdio.h>
-int menuViz(char *arr, int *prices){
+#include <string.h>
 
+int main(){
+
+	char arr[10] = {"Latte","Coffee","Tea"};
+	int prices[10] = {12,15,10};
 	int size = 0;
+	char ifWantToAdd;
+
+	puts("Welcome to coffee shop!");
+	puts("Your initial menu is:");
 
 	for (int i = 0;i < sizeof(arr) / sizeof(arr[0]);i++){
-		if (arr[i] != 0 && prices != 0){
+		if (arr[i] != 0 && prices[i] != 0){
 			printf("%s %d\n",arr[i],prices[i]);
 			size++;
 		}
 	}
-	return size;
-}
+	puts("Do you want to add smth to the menu?[y/n]");
+	scanf("%c",ifWantToAdd);
 
+	if (ifWantToAdd == 'y'){
+		char newName[50];
+		int newPrice;
 
-int main(){
+		puts("Enter new drink name:");
+		scanf("%s",newName);
+		
+		puts("Enter new drink\'s name:");
+		scanf("%d",newPrice);
 
-	char arr[10][50] = {"Latte","Coffee","Tea"};
-	int prices[10] = {12,15,10};
-	int size = 0;
+		strcpy(arr,newName);
+		prices[size] = newPrice;
+	}
 
-	puts("Welcome to coffee shop!");
-	puts("Your initial menu is:");
-	int sizeofmenu = menuViz(*arr,*prices);
-
-	printf("%d\n",size);
+	for (int i = 0;i < sizeof(arr) / sizeof(arr[0]);i++){
+		if (arr[i] != 0 && prices[i] != 0){
+			printf("%s %d\n",arr[i],prices[i]);
+			size++;
+		}
+	}
 
 	return 0;
 }
