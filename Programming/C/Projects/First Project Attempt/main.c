@@ -18,7 +18,7 @@ int main(){
 		}
 	}
 	puts("Do you want to add smth to the menu?[y/n]");
-	scanf("%c",ifWantToAdd);
+	scanf("%c",&ifWantToAdd);
 
 	if (ifWantToAdd == 'y'){
 		char newName[50];
@@ -28,7 +28,7 @@ int main(){
 		scanf("%s",newName);
 		
 		puts("Enter new drink\'s name:");
-		scanf("%d",newPrice);
+		scanf("%d",&newPrice);
 
 		strcpy(arr,newName);
 		prices[size] = newPrice;
