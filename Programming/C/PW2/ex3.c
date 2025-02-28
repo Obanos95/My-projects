@@ -3,10 +3,12 @@
 int main(){
 	int month,year;
 
+	// Getting month and year from user
 	puts("Enter month and year(month,year)");
 	scanf("%d,%d",&month,&year);
 
-	if (month >= 1 && month <= 12){
+	// Cheking if month and year are entered correctly
+	if (month >= 1 && month <= 12 && year > 0){
 		
 		switch(month){
 			case 1:puts("January");
@@ -32,6 +34,7 @@ int main(){
 					puts("27 days");
 		}
 	}
+	// Repeating the program if something was entered wrong
 	else{
 		puts("Wrong month entered. Try again");
 		main();

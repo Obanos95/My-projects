@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
+#include <stdlib.h> // I used stdlib library to use fflush function so that I can reset stdin buffer
+#include <ctype.h> // I used ctype library so that I can lower user's choice about repeating the program and the unit user enters
 
 int main(){
 
@@ -30,6 +30,7 @@ int main(){
 	else
 		printf("0i = 0cm\n");
 
+	// Starting the program again if not n is entered
 	puts("Do you want to start over?");
 	scanf(" %c",&again);
 	again = tolower(again);

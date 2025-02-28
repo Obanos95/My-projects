@@ -7,13 +7,16 @@ int main(){
 	double interest_acquired;
 	int years;
 
+	// Getting starting balance and interest rate from user
 	puts("Enter your capital and interest rate(capital,interest)");
 	scanf("%lf,%lf",&balance,&interest);
 	balance_initial = balance;
 	
+	// Getting information about years
 	puts("Enter for how many years do you put the money on");
 	scanf("%d",&years);
 
+	// Calculating interest and printing out the capital in each anniversary
 	for (int i = 1;i <= years;i++){
 		balance += balance*interest/100;
 		interest_acquired = balance - balance_initial;
