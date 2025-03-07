@@ -9,7 +9,6 @@ void length(){
 
 void charInit(){
 	// Initializing one string from another
-	char string[10] = "Hello";
 	char string2[5];
 	strcpy(string2,string);
 	printf("%s\n",string2);
@@ -17,7 +16,6 @@ void charInit(){
 
 void strInit(){
 	// Initialize a string till nth character
-	char string2[10] = "Hello";
 	char string3[10];
 	strncpy(string3,string2,2);
 	printf("%s\n",string3);
