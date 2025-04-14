@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
+// Computer chooses random number
 int compchoose(){
 	srand(time(NULL));
 	int randnum = rand()%999 + 1;
@@ -9,6 +10,7 @@ int compchoose(){
 	return randnum;
 }
 
+// If player chooses the computer to choose
 void compplays(){
 	int number = compchoose();
 	int numoftries = 0;
@@ -29,6 +31,7 @@ void compplays(){
 
 }
 
+// If player chooses to choose a number
 void humanplays(){
 	int number;
 	int min_lim = 1;
@@ -59,6 +62,7 @@ void humanplays(){
 
 }
 
+// Main function to start the game
 int main(){
 	char choice;
 	char playagain;
